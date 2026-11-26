@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Catch Base · Founding testers</title>
+<meta name="description" content="Become a founding tester of Catch Base, the fishing log that finds your patterns from your own catches. Free for life for the first 100 testers.">
+<meta property="og:title" content="Catch Base · Founding testers">
+<meta property="og:description" content="The fishing log that finds your patterns from your own catches. Free for life for the first 100 testers.">
+<meta property="og:image" content="https://momofcsp.github.io/testers/icon.png">
+<meta name="theme-color" content="#0A0D11">
+<link rel="icon" href="icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root { --bg:#0A0D11; --card:#12181c; --line:#243034; --text:#E8EEF0; --muted:#9FB0B5; --teal:#2CBAAC; --teal2:#6EDDD2; }
+  * { box-sizing:border-box }
+  html,body { margin:0; background:var(--bg); color:var(--text); font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; -webkit-text-size-adjust:100% }
+  body { background:radial-gradient(120% 70% at 85% 0%,#173431 0%,var(--bg) 60%) fixed; min-height:100vh }
+  .wrap { max-width:520px; margin:0 auto; padding:max(20px,env(safe-area-inset-top)) max(20px,env(safe-area-inset-right)) 40px max(20px,env(safe-area-inset-left)) }
+  header { display:flex; align-items:center; justify-content:space-between; gap:12px }
+  .brand { display:flex; align-items:center; gap:10px; font-weight:700; color:var(--teal); font-size:18px }
+  .brand img { width:36px; height:36px; border-radius:9px }
+  .langs { display:flex; gap:4px }
+  .langs button { background:transparent; border:1px solid var(--line); color:var(--muted); border-radius:999px; padding:5px 10px; font:600 12px Inter,system-ui,sans-serif; cursor:pointer }
+  .langs button[aria-pressed=true] { border-color:var(--teal); color:var(--teal2) }
+  h1 { font-size:32px; line-height:1.1; letter-spacing:-.5px; margin:28px 0 12px; text-wrap:balance }
+  .lead { color:var(--muted); font-size:16px; line-height:1.5; margin:0 0 20px }
+  .perks { list-style:none; padding:0; margin:0 0 24px; display:grid; gap:10px }
+  .perks li { display:flex; gap:10px; align-items:flex-start; background:var(--card); border:1px solid var(--line); border-radius:14px; padding:12px 14px; font-size:15px; line-height:1.4 }
+  .perks .i { flex:0 0 auto; font-size:18px; line-height:1.2 }
+  .cta { display:block; width:100%; text-align:center; text-decoration:none; background:var(--teal); color:#06201d; font-weight:700; font-size:18px; padding:16px; border-radius:14px; border:0; cursor:pointer }
+  .cta:active { transform:scale(.99) }
+  .sub { text-align:center; color:var(--muted); font-size:13px; margin:10px 0 0 }
+  .box { margin-top:22px; background:var(--card); border:1px solid var(--line); border-radius:16px; padding:16px }
+  .box h2 { font-size:15px; margin:0 0 10px }
+  .box ol { margin:0; padding-left:20px; display:grid; gap:8px; font-size:14px; line-height:1.45; color:var(--text) }
+  .warn { border-color:#8a6a1e; background:#1b1709 }
+  .warn h2 { color:#f2c14e }
+  .copy { margin-top:12px; display:flex; gap:8px; align-items:center }
+  .copy code { flex:1; min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; background:#0b1013; border:1px solid var(--line); border-radius:10px; padding:10px; font-size:13px; color:var(--teal2) }
+  .copy button { background:transparent; color:var(--teal2); border:1px solid var(--teal); border-radius:10px; padding:10px 12px; font:600 13px Inter,system-ui,sans-serif; cursor:pointer }
+  footer { margin-top:28px; color:var(--muted); font-size:13px; line-height:1.5; text-align:center }
+  footer a { color:var(--teal2) }
+  [hidden] { display:none !important }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand"><img src="icon.png" alt=""><span>Catch Base</span></div>
+    <div class="langs" role="group" aria-label="Language">
+      <button data-l="en">EN</button><button data-l="fr">FR</button><button data-l="de">DE</button>
+    </div>
+  </header>
+
+  <h1 data-t="h1"></h1>
+  <p class="lead" data-t="lead"></p>
+
+  <ul class="perks">
+    <li><span class="i">📊</span><span data-t="p1"></span></li>
+    <li><span class="i">🎁</span><span data-t="p2"></span></li>
+    <li><span class="i">📱</span><span data-t="p3"></span></li>
+    <li><span class="i">⏳</span><span data-t="p4"></span></li>
+  </ul>
+
+  <a class="cta" id="join" href="https://groups.google.com/g/catchbase-testers" data-t="cta"></a>
+  <p class="sub" data-t="sub"></p>
+
+  <div class="box warn" id="inapp" hidden>
+    <h2 data-t="inappH"></h2>
+    <ol><li data-t="inapp1"></li><li data-t="inapp2"></li><li data-t="inapp3"></li></ol>
+    <div class="copy"><code>groups.google.com/g/catchbase-testers</code><button id="copy" data-t="copy"></button></div>
+  </div>
+
+  <div class="box">
+    <h2 data-t="howH"></h2>
+    <ol><li data-t="how1"></li><li data-t="how2"></li><li data-t="how3"></li><li data-t="how4"></li></ol>
+  </div>
+
+  <footer><span data-t="by"></span><br><a href="https://momofcsp.github.io/privacy.html" data-t="privacy"></a></footer>
+</div>
+
+<script>
+const GROUP = 'https://groups.google.com/g/catchbase-testers';
+const T = {
+  en: {
+    h1: 'Become a founding tester',
+    lead: 'Catch Base is a fishing log, and nothing else. Log your catches and it shows you what really works, from your own data: spots, lures, hours, conditions. No social feed, no moon-based guessing.',
+    p1: 'Your own patterns: best spots, lures, hours and weather, per species.',
+    p2: '<b>Free for life</b> for the first 100 testers who help us test.',
+    p3: 'Android only for now. Takes about 2 minutes.',
+    p4: 'Keep the app installed for 14 days: Google needs that before the app can go public.',
+    cta: 'Join the test',
+    sub: 'Opens the Catch Base testers group on Google. Join with the Gmail you use for the Play Store.',
+    inappH: 'You’re in an app’s browser (Instagram, Facebook, Messenger…)',
+    inapp1: 'Google needs you to be signed in, which only works in Chrome.',
+    inapp2: 'Tap <b>⋯</b> (top right) → <b>Open in browser</b> / <b>Open in Chrome</b>.',
+    inapp3: 'Then tap <b>Join the test</b> again, or copy the link:',
+    copy: 'Copy', copied: 'Copied',
+    howH: 'How it works',
+    how1: 'Tap <b>Join the test</b> and then <b>Join group</b>, signed in with your Play Store Gmail.',
+    how2: 'In the group, open the link from the newest post (or the email) and tap <b>Become a tester</b>.',
+    how3: 'Tap <b>Download it on Google Play</b> and install Catch Base.',
+    how4: 'Log your fish, keep the app for 14 days, and send feedback from the app’s account menu.',
+    by: 'Made by Momo (LFTV), lure angler.',
+    privacy: 'Privacy policy',
+  },
+  fr: {
+    h1: 'Deviens testeur fondateur',
+    lead: 'Catch Base est un carnet de pêche, et rien d’autre. Note tes prises et l’appli te montre ce qui marche vraiment, d’après tes propres données : spots, leurres, heures, conditions. Pas de réseau social, pas de prédictions lunaires.',
+    p1: 'Tes propres tendances : meilleurs spots, leurres, heures et météo, par espèce.',
+    p2: '<b>Gratuit à vie</b> pour les 100 premiers testeurs qui nous aident.',
+    p3: 'Android uniquement pour l’instant. Environ 2 minutes.',
+    p4: 'Garde l’appli installée 14 jours : Google l’exige avant la sortie publique.',
+    cta: 'Rejoindre le test',
+    sub: 'Ouvre le groupe des testeurs Catch Base sur Google. Rejoins-le avec le Gmail de ton Play Store.',
+    inappH: 'Tu es dans le navigateur d’une appli (Instagram, Facebook, Messenger…)',
+    inapp1: 'Google demande d’être connecté, ce qui ne marche que dans Chrome.',
+    inapp2: 'Touche <b>⋯</b> (en haut à droite) → <b>Ouvrir dans le navigateur</b> / <b>Ouvrir dans Chrome</b>.',
+    inapp3: 'Puis touche à nouveau <b>Rejoindre le test</b>, ou copie le lien :',
+    copy: 'Copier', copied: 'Copié',
+    howH: 'Comment ça marche',
+    how1: 'Touche <b>Rejoindre le test</b> puis <b>Rejoindre le groupe</b>, connecté avec le Gmail de ton Play Store.',
+    how2: 'Dans le groupe, ouvre le lien du message le plus récent (ou de l’e-mail) et touche <b>Devenir testeur</b>.',
+    how3: 'Touche <b>Télécharger sur Google Play</b> et installe Catch Base.',
+    how4: 'Note tes poissons, garde l’appli 14 jours et envoie tes retours depuis le menu du compte.',
+    by: 'Créé par Momo (LFTV), pêcheur aux leurres.',
+    privacy: 'Politique de confidentialité',
+  },
+  de: {
+    h1: 'Werde Gründungstester',
+    lead: 'Catch Base ist ein Fangbuch, sonst nichts. Trag deine Fänge ein, und die App zeigt dir, was wirklich funktioniert, aus deinen eigenen Daten: Spots, Köder, Uhrzeiten, Bedingungen. Kein soziales Netzwerk, kein Raten nach Mondphase.',
+    p1: 'Deine eigenen Muster: beste Spots, Köder, Uhrzeiten und Wetter, je Fischart.',
+    p2: '<b>Lebenslang kostenlos</b> für die ersten 100 Tester, die uns helfen.',
+    p3: 'Vorerst nur Android. Dauert etwa 2 Minuten.',
+    p4: 'Lass die App 14 Tage installiert: Das verlangt Google, bevor sie öffentlich werden kann.',
+    cta: 'Beim Test mitmachen',
+    sub: 'Öffnet die Catch Base Testergruppe bei Google. Tritt mit der Gmail-Adresse deines Play Store bei.',
+    inappH: 'Du bist im Browser einer App (Instagram, Facebook, Messenger…)',
+    inapp1: 'Google verlangt eine Anmeldung, und die klappt nur in Chrome.',
+    inapp2: 'Tippe oben rechts auf <b>⋯</b> → <b>Im Browser öffnen</b> / <b>In Chrome öffnen</b>.',
+    inapp3: 'Dann nochmal auf <b>Beim Test mitmachen</b> tippen oder den Link kopieren:',
+    copy: 'Kopieren', copied: 'Kopiert',
+    howH: 'So funktioniert’s',
+    how1: 'Tippe auf <b>Beim Test mitmachen</b> und dann auf <b>Gruppe beitreten</b>, angemeldet mit deiner Play-Store-Gmail.',
+    how2: 'Öffne in der Gruppe den Link aus dem neuesten Beitrag (oder der E-Mail) und tippe auf <b>Tester werden</b>.',
+    how3: 'Tippe auf <b>Bei Google Play herunterladen</b> und installiere Catch Base.',
+    how4: 'Trag deine Fische ein, behalte die App 14 Tage und schick Feedback über das Kontomenü.',
+    by: 'Gemacht von Momo (LFTV), Spinnfischer.',
+    privacy: 'Datenschutzerklärung',
+  },
+};
+
+const ua = navigator.userAgent || '';
+const android = /Android/i.test(ua);
+// Browsers built into social apps: Google won't let people sign in there.
+const inApp = /Instagram|FBAN|FBAV|FB_IAB|FBIOS|Messenger|WhatsApp|Line\/|Snapchat|TikTok|musical_ly|; wv\)/i.test(ua);
+
+function pick() {
+  const q = new URLSearchParams(location.search).get('lang');
+  if (q && T[q]) return q;
+  try { const s = localStorage.getItem('cb-lang'); if (s && T[s]) return s; } catch (e) {}
+  const n = (navigator.languages && navigator.languages[0]) || navigator.language || 'en';
+  const two = n.slice(0, 2).toLowerCase();
+  return T[two] ? two : 'en';
+}
+function apply(l) {
+  document.documentElement.lang = l;
+  document.querySelectorAll('[data-t]').forEach((el) => { el.innerHTML = T[l][el.dataset.t]; });
+  document.querySelectorAll('.langs button').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.l === l)));
+  try { localStorage.setItem('cb-lang', l); } catch (e) {}
+  window.__lang = l;
+}
+document.querySelectorAll('.langs button').forEach((b) => b.addEventListener('click', () => apply(b.dataset.l)));
+apply(pick());
+
+const join = document.getElementById('join');
+if (inApp) document.getElementById('inapp').hidden = false;
+if (android && inApp) {
+  // Ask Android to hand the group page to Chrome, where the person is signed in.
+  join.href = 'intent://groups.google.com/g/catchbase-testers#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=' + encodeURIComponent(GROUP) + ';end';
+}
+
+document.getElementById('copy').addEventListener('click', async (e) => {
+  const btn = e.currentTarget;
+  try { await navigator.clipboard.writeText(GROUP); }
+  catch (err) { const r = document.createRange(); r.selectNode(btn.previousElementSibling); getSelection().removeAllRanges(); getSelection().addRange(r); }
+  btn.textContent = T[window.__lang].copied;
+  setTimeout(() => { btn.textContent = T[window.__lang].copy; }, 1500);
+});
+</script>
+</body>
+</html>
